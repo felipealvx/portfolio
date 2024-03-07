@@ -4,18 +4,21 @@
     font-family: Roboto, Verdana, Helvetica;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     background-color: #1d1d1d;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    padding: 15px;
     align-items: center;
+    position: absolute;
+    width: 100%;
 }
 
 .icon a {
-    padding: 20px;
+    padding: 30px;
 }
 
 .icon a img{
@@ -31,7 +34,17 @@ header {
     text-decoration: none;
     color: white;
     font-weight: 800;
-    padding: 0 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.navbar ul li a:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    border-bottom: 3px solid white;
+    transition: .2s;
 }
 
 #home {
@@ -41,7 +54,8 @@ header {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 200px;
+    width: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +84,61 @@ header {
     font-size: 15px;
 }
 
+.about-me h1 {
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.about-me h2 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.about-me h3 {
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.about-me p {
+    display: block;
+    width: 300px;
+    padding-bottom: 30px;
+}
+
+.linkedin a {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.github a {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.curriculo a {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    width: 100px;
+}
+
+.linkedin img{
+    height: 30px;
+}
+
+.github img{
+    height: 40px;
+}
+
+.curriculo img{
+    height: 35px;
+}
+
 .photo img{
-    height: 198px;
+    height: 200px;
+    margin-left: 25px;
 }
