@@ -10,7 +10,7 @@
 header {
     background-color: #1d1d1d;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 15px;
     align-items: center;
     position: absolute;
@@ -48,7 +48,7 @@ header {
 }
 
 #home {
-    background-color: #d9d9d9;
+    background-color: #f3f3f3;
 }
 
 .container {
@@ -124,6 +124,7 @@ header {
     align-items: center;
     font-weight: 800;
     width: 100px;
+    
 }
 
 .linkedin img{
