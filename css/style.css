@@ -1,145 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    font-family: Roboto, Verdana, Helvetica;
+:root {
+    --amarelo-fraco: #F9EBD2;
+    --rosa-choque: #FF3049;
+    --azul-clarinho: #2FC0FF;
+    --amarelo-forte: #F4B526;
+    --branco: #e3e9f7;
+}
+
+/* Mobile FIRST*/
+
+* {
+    font-family: Montserrat, Verdana, Helvetica;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    background-color: #1d1d1d;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: center;
-    position: absolute;
+    background-color: white;
+    border-bottom: 1px solid #cfcfcf;
+    position: fixed;
     width: 100%;
 }
 
-.icon a {
-    padding: 30px;
-}
-
-.icon a img{
-    height: 20px;
-}
-
-.navbar ul {
-    list-style: none;
+.nav-bar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
+.logo {
+    margin: 0 40px;
     font-weight: 800;
-    padding: 10px;
-    margin: 5px;
+    color: var(--azul-clarinho);
 }
 
-.navbar ul li a:hover{
+.nav-list {
+    display: flex;
+    margin: 0 40px;
+    gap: 20px;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.nav-list-link {
+    padding: 20px 10px;
     text-decoration: none;
-    color: white;
-    font-weight: 800;
-    padding: 10px;
-    border-bottom: 3px solid white;
-    transition: .2s;
+    color: black
 }
 
-#home {
-    background-color: #f3f3f3;
+.nav-list-item:hover, .nav-list-link:hover {
+    transform: translateY(-3px);
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    color: var(--rosa-choque);
 }
 
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    width: 100vh;
+#container-1 {
+    background-color: var(--branco);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5%;
+    background-image: url(../img/background.svg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 2.5rem;
+    padding: 0 2rem;
+}
+
+.text-box {
+    width: 50%;
+}
+
+.text-box h1 {
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+}
+
+.myname {
+    background-color: var(--rosa-choque);
+    color: white;
+}
+
+#ocult {
+    display: none;
+}
+
+#dinamic-text {
+    font-weight: 400;
+}
+
+.about-me {
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+.about-me-text {
+    padding-bottom: 15px;
+    width: 80%;
+}
+
+.image-box img{
+    height: 12rem;
+    border-radius: 10px;
+    
+}
+
+.social-media-box {
+    display: flex;
+    gap: 10px;
 }
 
 .social {
     display: flex;
     align-items: center;
-}
-
-.social div {
-    margin-right: 15px;
-}
-
-.social a, p {
-    display: flex;
     text-decoration: none;
-    color: #1d1d1d;
+    gap: 0.2rem;
+    margin-right: 1.2rem;
+    color: black;
 }
 
-.social a img{
-    padding-right: 5px;
+.social i {
+    font-size: 1.7rem;
+    transition: color .2s ;
 }
 
-.social p {
-    font-size: 15px;
-}
-
-.about-me h1 {
-    font-size: 40px;
-    font-weight: 800;
-    padding-bottom: 10px;
-}
-
-.about-me h2 {
-    padding-bottom: 10px;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.about-me h3 {
-    font-weight: 700;
-    padding-bottom: 5px;
-}
-
-.about-me p {
-    display: block;
-    width: 300px;
-    padding-bottom: 30px;
-}
-
-.linkedin a {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-}
-
-.github a {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-}
-
-.curriculo a {
-    display: flex;
-    align-items: center;
-    font-weight: 800;
-    width: 100px;
-    
-}
-
-.linkedin img{
-    height: 30px;
-}
-
-.github img{
-    height: 40px;
-}
-
-.curriculo img{
-    height: 35px;
-}
-
-.photo img{
-    height: 200px;
-    margin-left: 25px;
+.social:hover {
+    color: var(--rosa-choque);
 }

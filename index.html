@@ -5,73 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!--portfolio header-->
     <header>
-        <div class="icon">
-            <a href="#"><img src="img/icons/icone-fa.svg" alt=""></a>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contatos</a></li>                
+        <nav class="nav-bar">
+            <div class="logo">
+                <p>FAlvx</p>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a class="nav-list-link" href="">Início</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">Projetos</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="">Sobre</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section id="home">
-            <div class="container">
-                <div class="text-links">
-                    <div class="about-me">
-                        <h1>Oi, eu sou Felipe.</h1>
-                        <h2><span id="text"></span></h2>
-                        <h3>Um pouquinho sobre mim:</h3>
-                        <p>Sou apaixonado por tecnologia! Atualmente estudo <span id="front-end-word">Desenvolvimento Web</span> e <span id="ux-ui">Design UX/UI.</span></p>
-                    </div>
-
-                    <div class="social">
-                        <div class="linkedin">
-                            <a href="https://www.linkedin.com/in/felipealvx/" target="_blank">
-                                <img src="img/icons/icon-linkedin.svg" alt="Icone LinkedIn">
-                                <p>LinkedIn</p>
-                            </a>
-                        </div>
-                        <div class="github">
-                            <a href="https://github.com/felipealvx" target="_blank">
-                                <img src="img/icons/icon-github.svg" alt="Icone GitHub">
-                                <p>GitHub</p>
-                            </a>
-                        </div>
-                        <div class="curriculo">
-                            <a href="#">
-                                <img src="img/icons/icon-download.svg" alt="Icone Download">
-                                <p>Baixar Currículo</p>
-                            </a>
-                        </div>
+    <!--Portfolio conteúdo principal, inicio-->
+    <main id="main">
+        <section id="container-1">
+            <div class="container-box">
+                <div class="text-box">
+                    <h1>Eu sou o <span class="myname">Felipe Alves</span></h1>
+                    <h2><span id="dinamic-text"></span></h2>
+                    <h2 id="ocult"> Web Developer, Designer UI/UX </h2>
+                    <p class="about-me">Um pouquinho sobre mim:</p>
+                    <p class="about-me-text">Meu nome é Felipe, tenho 20 anos e sou apaixonado por tecnologia! Atualmente estudo Desenvolvimento Web, Design UX e UI.</p>
+                    <div class="social-media-box">
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Instagram</p>
+                        </a href="#">
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p>LinkedIn</p>
+                        </a href="#">
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-github"></i>
+                            <p>Github</p>
+                        </a href="#">
+                        <a href="#" class="social">
+                            <i class="fa-solid fa-circle-down"></i>
+                            <p>Baixar Curriculo</p>
+                        </a href="#">
                     </div>
                 </div>
-                
-                <div class="photo">
-                    <img src="img/minha-foto.png" alt="Foto de Felipe">
+                <div class="image-box">
+                    <img src="img/foto-minha.png" alt="Felipe Alves Foto">
                 </div>
             </div>
+                
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 
-    <section class="about">
-    </section>
+    <script>
+    let typingText = new Typed("#dinamic-text", {
+        strings : ["UX Designer", "UI Designer", "Front-End Developer"],
+        loop : true,
+        typeSpeed : 100,
+        backSpeed : 50,
+        backDelay : 1000
+    })
+    </script>
 </body>
-<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script>
-    let typingText = new Typed("#text", {
-    strings : ["UX Designer", "UI Designer", "Front-End Developer"],
-    loop : true,
-    typeSpeed : 100,
-    backSpeed : 50,
-    backDelay : 1000
-})
-</script>
 </html>
