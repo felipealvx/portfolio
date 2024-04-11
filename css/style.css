@@ -213,8 +213,6 @@ header {
     background-color: var(--rosa-choque);
 }
 
-/*add hover*/
-
 .github {
     font-size: 2.75rem;
     color: black;
@@ -224,7 +222,7 @@ header {
     color: var(--rosa-choque);
 }
 
-#about-me {
+#about-me-section {
     height: 600px;
     background-color: var(--branco);
 }

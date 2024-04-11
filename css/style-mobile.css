@@ -16,3 +16,279 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+header {
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: none;
+}
+
+.logo {
+    padding: 0.5rem;
+    font-weight: 800;
+    color: var(--azul-clarinho);
+}
+
+/*Home INICIO*/
+
+#container-1 {
+    background-color: var(--branco);
+    height: 95vh;
+    background-image: url(../img/background.svg);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.image-box {
+    width: 100px;
+    margin: 1.25rem 0 0.675rem 0;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.text-box {
+    margin-inline: 0.675rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-box h1 {
+    font-weight: 400;
+}
+.myname {
+    background-color: var(--rosa-choque);
+    color: white;
+    font-weight: 600;
+}
+
+#dinamic-text {
+    font-weight: 600;
+}
+
+#ocult {
+    display: none;
+}
+
+.about-me {
+    padding-top: 0.675rem;
+    font-weight: 600;
+}
+
+.about-me-text {
+    text-align: justify;
+}
+
+.social-media-box {
+    display: flex;
+    font-size: 2.5rem;
+    gap: 2rem;
+    padding-block: 1.25rem;
+}
+
+.social-media-box a {
+    text-decoration: none;
+    color: black;
+    transition: all .4s ease-in-out;
+}
+.social-media-box a:hover{
+    color: #FF3049;
+}
+
+.social-media-box > a > p {
+    display: none;
+}
+
+/*PROJETOS*/
+
+#projects {
+    height: 100%;
+    background-color: var(--branco);
+}
+
+.nav-sections {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    padding: 0.675rem;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.25rem;
+}
+
+.container-grid-projects {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.project-card {
+    width: 100%;
+    background-color: white;
+    padding: 0.675rem;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-title {
+    text-align: center;
+}
+.card-topic {
+    font-weight: 600;
+    text-align: center;
+}
+.card-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    margin: 0.675rem 0 0.675rem 0;
+}
+.links-card {
+    display: flex;
+    align-items: center;
+}
+.card-button {
+    background-color: black;
+    color: white;
+    padding: 0.675rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.github {
+    font-size: 2.9rem;
+    width: 20%;
+    text-align: right;
+    color: black;
+}
+
+.coming-soon {
+    display: none;
+}
+
+/*about me section*/
+
+#about-me-section {
+    background-color: var(--branco);
+    height: 100%;
+}
+
+.container-about {
+    margin: 0.675rem 0.675rem 0 0.675rem;
+}
+
+/*texts about me */
+.about-me-title {
+    padding-top: 1.25rem;
+    text-align: center;
+}
+.colored {
+    color: var(--rosa-choque);
+}
+.about-me-subtitle {
+    text-align: center;
+    padding: 0.675rem;
+}
+.about-me-p {
+    text-align: justify;
+    padding-bottom: 0.675rem;
+}
+
+/*parte dois */
+
+.skills-title {
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    padding: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.icon-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-skill i {
+    font-size: 3rem;
+}
+.icon-skill p {
+    font-size: 0.675rem;
+}
+
+/*hovers dos icones das skills*/
+.html:hover {
+    transition: all .3s ease-in-out;
+    color: orangered;
+}
+.css:hover {
+    transition: all .3s ease-in-out;
+    color: #0059ff;
+}
+.js:hover {
+    transition: all .3s ease-in-out;
+    color: rgb(255, 225, 0);
+}
+.bts:hover {
+    transition: all .3s ease-in-out;
+    color: purple;
+}
+.fgm:hover {
+    transition: all .3s ease-in-out;
+    color: var(--rosa-choque);
+}
+
+/*formacoes*/
+.formation {
+    padding-block: 0.675rem;
+}
+.formation-title {
+    text-align: center;
+    padding-bottom: 0.675rem;
+}
+.academic {
+    background-color: white;
+    padding: 0.675rem;
+    border-radius: 4px;
+    margin-bottom: 0.675rem;
+}
+.academic > p {
+    color: gray;
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
+    padding: 0.2rem;
+}
