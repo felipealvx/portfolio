@@ -43,7 +43,7 @@ header {
 #container-1 {
     background-color: var(--branco);
     height: 95vh;
-    background-image: url(../img/background.svg);
+    /*background-image: url(../img/background.svg);*/
     background-repeat: none;
     background-size: cover;
     display: flex;
@@ -60,6 +60,10 @@ header {
 .image-box {
     width: 100px;
     margin: 1.25rem 0 0.675rem 0;
+}
+
+.image-box img:first-child {
+    display: none;
 }
 
 .image-box img {
@@ -80,10 +84,6 @@ header {
 .myname {
     background-color: var(--rosa-choque);
     color: white;
-    font-weight: 600;
-}
-
-#dinamic-text {
     font-weight: 600;
 }
 

@@ -113,10 +113,13 @@ header {
     width: 80%;
 }
 
+.image-box img:last-child {
+    display: none;
+}
+
 .image-box img{
     height: 12rem;
     border-radius: 10px;
-    
 }
 
 .social-media-box {
