@@ -8,19 +8,20 @@
     --branco: #e3e9f7;
 }
 
-/* Mobile FIRST*/
 
 * {
     font-family: Montserrat, Verdana, Helvetica;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
     background-color: white;
     border-bottom: 1px solid #cfcfcf;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 
@@ -61,7 +62,7 @@ header {
 
 #container-1 {
     background-color: var(--branco);
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,4 +140,183 @@ header {
 
 .social:hover {
     color: var(--rosa-choque);
+}
+
+#projects {
+    height: 100%;
+    background-color: var(--branco);
+}
+
+.nav-sections {
+    background-color: white;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.container-grid-projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+    gap: 1.25rem;
+    grid-auto-columns: 200px;
+    height: 100%;
+    padding-block: 3rem;
+}
+
+.project-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.199);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-topic {
+    padding-top: 0.675rem;
+    font-weight: 600;
+}
+
+.card-ul {
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+}
+
+.links-card {
+    display: flex;
+    margin-top: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-button {
+    padding: 0.675rem 2rem;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: all .3s ease-in-out;
+}
+.card-button:hover {
+    background-color: var(--rosa-choque);
+}
+
+/*add hover*/
+
+.github {
+    font-size: 2.75rem;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+.github:hover {
+    color: var(--rosa-choque);
+}
+
+#about-me {
+    height: 600px;
+    background-color: var(--branco);
+}
+
+/*sobre mim*/
+
+.container-about {
+    display: flex;
+    margin: 1.25rem;
+    align-items: top;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+
+.about-me-title {
+    padding-bottom: 1.25rem;
+}
+
+.colored {
+    color: var(--rosa-choque);
+}
+
+.texts-about-me {
+    width: 50%;
+    padding-right: 3rem;
+}
+
+.container-about-right {
+    width: 50%;
+}
+
+.skills-title {
+    padding-bottom: 1.25rem;
+}
+
+.skills-container {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    padding-bottom: 1.25rem;
+}
+
+.icon-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 6rem;
+    padding: 0.675rem;
+    border-radius: 6px;
+}
+
+.icon-skill i {
+    font-size: 3rem;
+}
+
+/*hovers dos icones das skills*/
+.html:hover {
+    transition: all .3s ease-in-out;
+    color: orangered;
+}
+.css:hover {
+    transition: all .3s ease-in-out;
+    color: #0059ff;
+}
+.js:hover {
+    transition: all .3s ease-in-out;
+    color: rgb(255, 255, 0);
+    background-color: rgb(18, 18, 18);
+}
+.bts:hover {
+    transition: all .3s ease-in-out;
+    color: purple;
+}
+.fgm:hover {
+    transition: all .3s ease-in-out;
+    color: var(--rosa-choque);
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.675rem;
+}
+
+.academic {
+    background-color: white;
+    padding: 0.675rem;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-block: 2px;
 }
