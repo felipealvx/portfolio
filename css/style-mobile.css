@@ -21,21 +21,37 @@ header {
     background-color: white;
     width: 100%;
     border-bottom: 1px solid rgb(170, 170, 170);
+    position: sticky;
+    top: 0;
 }
 
 .nav-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.675rem;
+}
+
+.mobile-ocult {
+    display: none;
 }
 
 .nav-list {
-    display: none;
+    list-style: none;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 0.675rem;
 }
 
 .logo {
     padding: 0.5rem;
     font-weight: 800;
     color: var(--azul-clarinho);
+    font-size: 1.25rem;
 }
 
 /*Home INICIO*/
@@ -43,7 +59,7 @@ header {
 #container-1 {
     background-color: var(--branco);
     height: 95vh;
-    /*background-image: url(../img/background.svg);*/
+    background-image: url(../img/background-mobile.svg);
     background-repeat: none;
     background-size: cover;
     display: flex;
